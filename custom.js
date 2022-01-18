@@ -1,5 +1,5 @@
 //code
-(function injectJS() {
+(function injectJSS() {
     try {        
         var iFrameHead = window.frames["ymIframe"].document.getElementsByTagName("head")[0];         
         var modularBars = document.createElement('script');
