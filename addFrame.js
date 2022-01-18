@@ -9,7 +9,7 @@
     document.getElementById("player").style.width = "0px";
     document.querySelector("#chatContainer").insertAdjacentHTML(
       "afterbegin",
-      `           <div class="overflow-container-header">
+      `<div class="overflow-container-header">
         <ul class="header-wrapper">
             <div class="header-title" id="main-header-title" style="font-weight: 700; font-size: large;color: black;">TAMI</div>
             <div style="display:flex;align-items:center;">
