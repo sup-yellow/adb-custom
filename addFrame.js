@@ -34,48 +34,6 @@
 function dynamicHeaderTitle(e) {
   e.preventDefault();
   var title = e.srcElement.getAttribute("title");
-  // document.getElementById("main-header-title").textContent = title;
-}
-
-// document.getElementById('e1').onclick = function () {
-//    document.getElementById('main-header-title').innerHTML='Active Passive'
-//    parent.postMessage("ACTIVE", "*")
-// };
-
-// document.getElementById('e2').onclick = function () {
-//    document.getElementById('main-header-title').innerHTML='Asset Allocation'
-//    parent.postMessage("ASSET", "*")
-// };
-
-// document.getElementById('e3').onclick = function () {
-//    document.getElementById('main-header-title').innerHTML='Economics'
-//    parent.postMessage("ECON", "*")
-// };
-
-// document.getElementById('e4').onclick = function () {
-//    document.getElementById('main-header-title').innerHTML='Investor Behaviour'
-//    parent.postMessage("INVESTOR", "*")
-// };
-
-// document.getElementById('e5').onclick = function () {
-//    document.getElementById('main-header-title').innerHTML='ISG'
-//    parent.postMessage("ISG", "*")
-// };
-
-// document.getElementById('e6').onclick = function () {
-//    document.getElementById('main-header-title').innerHTML='Retirement Planning'
-//    parent.postMessage("RETIREMENT", "*")
-// };
-
-// document.getElementById('e7').onclick = function () {
-//    document.getElementById('main-header-title').innerHTML='Strategic Communications'
-//    parent.postMessage("STRAT-COM", "*")
-// };
-
-// document.getElementById('e8').onclick = function () {
-//    document.getElementById('main-header-title').innerHTML='VCMM Capital Markets'
-//    parent.postMessage("VCMM", "*")
-// };
 
 document.getElementById("e9").onclick = function () {
   parent.postMessage("CLOSE", "*");
