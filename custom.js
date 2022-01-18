@@ -1,3 +1,4 @@
+//code
 (function injectJS() {
     try {        
         var iFrameHead = window.frames["ymIframe"].document.getElementsByTagName("head")[0];         
