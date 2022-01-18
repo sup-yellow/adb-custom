@@ -49,125 +49,125 @@ window.addEventListener('message', function(eventData) {
     try{
 
         console.error( 'Data----------------->>>',eventData.data);
-        if(eventData.data == 'VEMO') {
-            document.getElementById('ymIframe').contentWindow.postMessage({
-                event_code: 'ym-client-event',
-                data: {
-                    event: {
-                     code: "VEMO",
-                     data: ""
-                    }
-                }
-           }, '*');
-           return;
-        }
+        // if(eventData.data == 'VEMO') {
+        //     document.getElementById('ymIframe').contentWindow.postMessage({
+        //         event_code: 'ym-client-event',
+        //         data: {
+        //             event: {
+        //              code: "VEMO",
+        //              data: ""
+        //             }
+        //         }
+        //    }, '*');
+        //    return;
+        // }
 
 
-        if(eventData.data == 'ACTIVE') {
-            console.log('In Custom js')
-            document.getElementById('ymIframe').contentWindow.postMessage({
-                event_code: 'ym-client-event',
-                data: {
-                    event: {
-                     code: "ACTIVE",
-                     data: ""
-                    }
-                }
-           }, '*');
-           return;
-        }
+        // if(eventData.data == 'ACTIVE') {
+        //     console.log('In Custom js')
+        //     document.getElementById('ymIframe').contentWindow.postMessage({
+        //         event_code: 'ym-client-event',
+        //         data: {
+        //             event: {
+        //              code: "ACTIVE",
+        //              data: ""
+        //             }
+        //         }
+        //    }, '*');
+        //    return;
+        // }
 
-        if(eventData.data == 'ASSET') {
-            document.getElementById('ymIframe').contentWindow.postMessage({
-                event_code: 'ym-client-event',
-                data: {
-                    event: {
-                     code: "ASSET",
-                     data: ""
-                    }
-                }
-           }, '*');
-           return;
-        }
+        // if(eventData.data == 'ASSET') {
+        //     document.getElementById('ymIframe').contentWindow.postMessage({
+        //         event_code: 'ym-client-event',
+        //         data: {
+        //             event: {
+        //              code: "ASSET",
+        //              data: ""
+        //             }
+        //         }
+        //    }, '*');
+        //    return;
+        // }
 
-        if(eventData.data == 'ECON') {
-            document.getElementById('ymIframe').contentWindow.postMessage({
-                event_code: 'ym-client-event',
-                data: {
-                    event: {
-                     code: "ECON",
-                     data: ""
-                    }
-                }
-           }, '*');
-           return;
-        }
+        // if(eventData.data == 'ECON') {
+        //     document.getElementById('ymIframe').contentWindow.postMessage({
+        //         event_code: 'ym-client-event',
+        //         data: {
+        //             event: {
+        //              code: "ECON",
+        //              data: ""
+        //             }
+        //         }
+        //    }, '*');
+        //    return;
+        // }
 
-        if(eventData.data == 'INVESTOR') {
-            document.getElementById('ymIframe').contentWindow.postMessage({
-                event_code: 'ym-client-event',
-                data: {
-                    event: {
-                     code: "INVESTOR",
-                     data: ""
-                    }
-                }
-           }, '*');
-           return;
-        }
+        // if(eventData.data == 'INVESTOR') {
+        //     document.getElementById('ymIframe').contentWindow.postMessage({
+        //         event_code: 'ym-client-event',
+        //         data: {
+        //             event: {
+        //              code: "INVESTOR",
+        //              data: ""
+        //             }
+        //         }
+        //    }, '*');
+        //    return;
+        // }
 
 
-        if(eventData.data == 'ISG') {
-            document.getElementById('ymIframe').contentWindow.postMessage({
-                event_code: 'ym-client-event',
-                data: {
-                    event: {
-                     code: "ISG",
-                     data: ""
-                    }
-                }
-           }, '*');
-           return;
-        }
+        // if(eventData.data == 'ISG') {
+        //     document.getElementById('ymIframe').contentWindow.postMessage({
+        //         event_code: 'ym-client-event',
+        //         data: {
+        //             event: {
+        //              code: "ISG",
+        //              data: ""
+        //             }
+        //         }
+        //    }, '*');
+        //    return;
+        // }
 
-        if(eventData.data == 'RETIREMENT') {
-            document.getElementById('ymIframe').contentWindow.postMessage({
-                event_code: 'ym-client-event',
-                data: {
-                    event: {
-                     code: "RETIREMENT",
-                     data: ""
-                    }
-                }
-           }, '*');
-           return;
-        }
+        // if(eventData.data == 'RETIREMENT') {
+        //     document.getElementById('ymIframe').contentWindow.postMessage({
+        //         event_code: 'ym-client-event',
+        //         data: {
+        //             event: {
+        //              code: "RETIREMENT",
+        //              data: ""
+        //             }
+        //         }
+        //    }, '*');
+        //    return;
+        // }
 
-        if(eventData.data == 'STRAT-COM') {
-            document.getElementById('ymIframe').contentWindow.postMessage({
-                event_code: 'ym-client-event',
-                data: {
-                    event: {
-                     code: "STRAT-COM",
-                     data: ""
-                    }
-                }
-           }, '*');
-           return;
-        }
+        // if(eventData.data == 'STRAT-COM') {
+        //     document.getElementById('ymIframe').contentWindow.postMessage({
+        //         event_code: 'ym-client-event',
+        //         data: {
+        //             event: {
+        //              code: "STRAT-COM",
+        //              data: ""
+        //             }
+        //         }
+        //    }, '*');
+        //    return;
+        // }
 
-        if(eventData.data == 'VCMM') {
-            document.getElementById('ymIframe').contentWindow.postMessage({
-                event_code: 'ym-client-event',
-                data: {
-                    event: {
-                     code: "VCMM",
-                     data: ""
-                    }
-                }
-           }, '*');
-           return;
-        }
+        // if(eventData.data == 'VCMM') {
+        //     document.getElementById('ymIframe').contentWindow.postMessage({
+        //         event_code: 'ym-client-event',
+        //         data: {
+        //             event: {
+        //              code: "VCMM",
+        //              data: ""
+        //             }
+        //         }
+        //    }, '*');
+        //    return;
+        // }
 
         
 
