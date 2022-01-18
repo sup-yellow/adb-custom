@@ -34,7 +34,7 @@
 function dynamicHeaderTitle(e) {
   e.preventDefault();
   var title = e.srcElement.getAttribute("title");
-
+}
 document.getElementById("e9").onclick = function () {
   parent.postMessage("CLOSE", "*");
 };
