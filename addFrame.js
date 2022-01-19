@@ -10,7 +10,7 @@
     document.querySelector("#chatContainer").insertAdjacentHTML(
       "afterbegin",
       `<div class="overflow-container-header">
-        <ul class="header-wrapper">
+        <ul class="header-wrapper" style="display: flex;justify-content: space-between;">
             <div class="header-title" id="main-header-title" style="font-weight: 700; font-size: large;color: black;">TAMI</div>
             <div style="display:flex;align-items:center;">
                  <div id="e11" class="icons-box"> 
