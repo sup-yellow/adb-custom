@@ -9,7 +9,9 @@
     document.getElementById("player").style.width = "0px";
     document.querySelector("#chatContainer").insertAdjacentHTML(
       "afterbegin",
-      `<div class="overflow-container-header">
+      `<div class="mod-head-side-bar-container">
+        <div class="overflow-container-sidebar">
+      <div class="overflow-container-header">
         <ul class="header-wrapper" style="display: flex;justify-content: space-between;">
             <div class="header-title" id="main-header-title" style="font-weight: 700; font-size: large;color: black;">TAMI</div>
             <div style="display:flex;align-items:center;">
@@ -24,7 +26,9 @@
                  </div>
             </div>
         </ul>
-    </div> `
+    </div> 
+    </div>
+           </div> `
     );
   } catch (e) {
     console.log("failing while trying to insert add frame script", e);
