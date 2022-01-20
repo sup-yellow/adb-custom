@@ -11,17 +11,17 @@
       "afterbegin",
       `<div class="mod-head-side-bar-container">
          <div class="overflow-container-header">
-               <ul class="header-wrapper" style="display: flex;justify-content: space-between;display: flex;flex-direction: row;align-items: center;justify-content: space-between;background-color: #fff;padding: 0;list-style: none;height: 3rem;border: 0.5px solid #ccc;border-left: 0;">
-                  <div class="header-title" id="main-header-title" style="font-weight: 700; font-size: large;color: black;">TAMI</div>
+               <ul class="header-wrapper" style="display: flex;justify-content: space-between;display: flex;flex-direction: row;align-items: center;justify-content: space-between;background-color: rgb(0, 37, 105);padding: 0;list-style: none;height: 3rem;border: 0.5px solid #ccc;border-left: 0;">
+                  <div class="header-title" id="main-header-title" style="font-weight: 700; font-size: large;color: white;">TAMI</div>
                    <div style="display:flex;align-items:center;">
                    <div id="e11" class="icons-box" style="padding: 0 1rem;"> 
-                       <span class="header-bar-icon-box" title="minimize" style="color: #000;font-weight: 900;font-size: 20px;width: 100%;padding-left: 0.5rem;cursor: pointer;">-</span>
+                       <span class="header-bar-icon-box" title="minimize" style="color: white;font-weight: 900;font-size: 20px;width: 100%;padding-left: 0.5rem;cursor: pointer;">-</span>
                    </div>
                    <div id="e10" style="cursor:pointer;"> 
                    <span class="header-bar-icon-box" title="maxamize"><img src="https://cdn.yellowmessenger.com/m65zoVM7Si3s1624952263631.png" style="width: 1.7rem; height: 20px;" /></span>
                    </div>
                    <div id="e9" class="icons-box" padding: 0 1rem;> 
-                       <span class="header-bar-icon-box" title="Close" style="padding: 0 1rem;color: #000;font-weight: 900;font-size: 20px;width: 100%;padding-left: 0.5rem;cursor: pointer;">x</span>
+                       <span class="header-bar-icon-box" title="Close" style="padding: 0 1rem;color: white;font-weight: 900;font-size: 20px;width: 100%;padding-left: 0.5rem;cursor: pointer;">x</span>
                    </div>
               </div>
              </ul>
