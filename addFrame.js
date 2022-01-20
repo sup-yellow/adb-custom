@@ -11,7 +11,7 @@
       "afterbegin",
       `<div class="mod-head-side-bar-container">
          <div class="overflow-container-header">
-               <ul class="header-wrapper" style="display: flex;justify-content: space-between;">
+               <ul class="header-wrapper" style="display: flex;justify-content: space-between;display: flex;flex-direction: row;align-items: center;justify-content: space-between;background-color: #fff;padding: 0;list-style: none;height: 3rem;border: 0.5px solid #ccc;border-left: 0;">
                   <div class="header-title" id="main-header-title" style="font-weight: 700; font-size: large;color: black;">TAMI</div>
                    <div style="display:flex;align-items:center;">
                    <div id="e11" class="icons-box"> 
