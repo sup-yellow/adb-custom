@@ -12,7 +12,9 @@
       `<div class="mod-head-side-bar-container">
          <div class="overflow-container-header">
                <ul class="header-wrapper" style="display: flex;justify-content: space-between;display: flex;flex-direction: row;align-items: center;justify-content: space-between;background-color: rgb(0, 37, 105);padding: 0;list-style: none;height: 4rem;border: 0.5px solid #ccc;border-left: 0;">
-                  <div class="header-title" id="main-header-title" style="font-weight: 700; font-size: large;color: white;">TAMI</div>
+                  <div class="header-title" id="main-header-title" style="font-weight: 700; font-size: large;color: white;">
+                  <img class="sidebar-img-icon" src="https://www.chatbotsportal.com/api/chat/get-file/60a74746edb96a69de78af7e" style="width: 37px; height: auto;margin-left: 10px;">
+                  TAMI</div>
                    <div style="display:flex;align-items:center;">
                    <div id="e11" class="icons-box" style="padding: 0 1rem;"> 
                        <span class="header-bar-icon-box" title="minimize" style="color: white;font-weight: 900;font-size: 20px;width: 100%;padding-left: 0.5rem;cursor: pointer;">-</span>
