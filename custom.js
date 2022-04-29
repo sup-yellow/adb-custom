@@ -36,7 +36,7 @@ function injectDynamicCssToParent() {
   parentStyles.type = "text/css";
 
   var parentCssStyles =
-    '#ymFrameHolder { width: 100%; left: unset !important; } @media only screen and (min-width: 768px) { #ymFrameHolder { width: 440px; } #fadeshow { display: none;} }';
+    '#ymFrameHolder { width: 100%; } @media only screen and (min-width: 768px) { #ymFrameHolder { width: 440px; } #fadeshow { display: none;} }';
     
   if (parentStyles.styleSheet) {
     parentStyles.styleSheet.cssText = parentCssStyles;
@@ -46,41 +46,16 @@ function injectDynamicCssToParent() {
   parentCssHead.appendChild(parentStyles);
 }
 
-function updateIframeHeight(heightDiff) {
-  console.log("getElementWithinIframe --->", heightDiff);
-  try {
-    var ymFrameHead = window.frames["ymIframe"].document.getElementsByTagName("head")[0];
-    var modularStyles = document.createElement("style");
-    modularStyles.type = "text/css";
-
-    var css = `#chatBoxMainContainer { height: ${heightDiff}px !important }`;
-
-    if (modularStyles.styleSheet) {
-      modularStyles.styleSheet.cssText = css;
-    } else {
-      modularStyles.appendChild(document.createTextNode(css));
-    }
-    ymFrameHead.appendChild(modularStyles);
-  } catch (e) {
-    console.error("failed while inserting to iFrame", e);
-  }
-}
-
-
 window.addEventListener(
   "message",
   function (eventData) {
     console.log("onload---->");
-//     console.log(eventData);
+    console.log(eventData);
     try {
-      console.log("Data----------------->>>", eventData.data);
+      console.error("Data----------------->>>", eventData.data);
 
       if (eventData.data == "CLOSE") {
         window.YellowMessengerPlugin.closeBot();
-      }
-      
-      if (eventData.data == "OPEN") {
-        console.log("***********OPEN************");
       }
 
       if (eventData.data == "Maxamize") {
@@ -129,88 +104,6 @@ window.addEventListener(
             console.error("failed while inserting to iFrame", e);
           }
         })();
-      }
-      
-      
-      
-      if(event) {
-        var openedState = JSON.parse(eventData.data);
-        console.log("opened state --> ", openedState);
-        
-        if(openedState?.event_code == "ym-bot-opened") {
-          // console.log("testing ");
-          // var iframe = document.getElementById('ymIframe');
-          // var innerDoc = iframe;
-
-          // // var promo = iframe.contentDocument.body.getElementsByClassName("promo-carousel")[0].offsetHeight;
-          // // console.log("promo --> ", promo);
-
-          // var chatContainer = iframe.contentDocument.body.getElementsByClassName("live-chat")["chatBoxMainContainer"];
-          // console.log("chatContainer --> ", chatContainer.style.height);
-
-          // var secondChatContainerHeight = chatContainer.getBoundingClientRect().height;
-          // console.log("chatContainerHeight --> ", secondChatContainerHeight);
-          // console.log("ashish sharma")
-
-          // var heightDiff = secondChatContainerHeight - 75;
-          // console.log("heightDiff --> ", heightDiff);
-
-          // chatContainer.style.height = `${heightDiff}px`;
-
-
-
-
-          // var chatContainerHeight = chatContainer.style.height;
-          // var chatContainerHeight = chatContainer.offsetHeight;
-          // console.log("chatContainerHeight --> ", chatContainerHeight);
-
-
-          /* var splittedValue = chatContainerHeight.split("px")[0];
-          console.log("splittedValue --> ", splittedValue);
-
-          
-          var splittedContainerHeight = Number(splittedValue);
-          console.log("splittedContainerHeight --> ", splittedContainerHeight); */
-
-          // var ignoreClickOnElement = chatContainer;
-          // var count = 0;
-          // iframe.contentDocument.body.addEventListener('click', function(event) {
-          //     count++;
-          //     if(count < 1) {
-          //       // var isClickInsideElement = ignoreClickOnElement.contains(event.target);
-          //       // if (!isClickInsideElement) {
-          //         var chatContainerHeight = chatContainer.getBoundingClientRect().height;
-          //         console.log("chatContainerHeight --> ", chatContainerHeight);
-          //         console.log("ashish sharma")
-
-          //         var heightDiff = chatContainerHeight - 75;
-          //         console.log("heightDiff --> ", heightDiff);
-
-          //         chatContainer.style.height = `${heightDiff}px`;
-
-          //         console.log("chatContainer  testing purpose ", chatContainer.style.height, "px");
-
-          //         console.log("innerDoc --> ", innerDoc)
-          //         var temp = innerDoc.body;
-          //         console.log("temp ----> ", temp);
-
-          //         updateIframeHeight(heightDiff);
-          //           //Do something click is outside specified element
-          //       // }
-          //     }
-          // });
-
-          
-
-          // var promoCloseBtn = iframe.contentDocument.body.getElementsByClassName("promo-carousel-close-button")["close-promotion"];
-          // console.log("promoCloseBtn ----> ", promoCloseBtn);
-
-          // console.log("splittedContainerHeight ----> ", splittedContainerHeight);
-          // var updatedHeight = splittedContainerHeight + 75;
-          
-          // console.log("updatedHeight ----> ", updatedHeight);
-          // promoCloseBtn.onclick = updateIframeHeight(updatedHeight);
-        }
       }
 
       // if(eventData.data == 'MINIMIZE') {
