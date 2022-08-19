@@ -27,7 +27,7 @@
                          <span class="header-bar-icon-box" title="minimize" style="color: white;font-weight: 900;font-size: 30px;width: 100%;padding-left: 0.5rem;cursor: pointer;">-</span>
                      </div>
                      <div id="e10" style="cursor:pointer;"> 
-                     <span class="header-bar-icon-box" title="maxamize"><img src="https://cdn.yellowmessenger.com/m65zoVM7Si3s1624952263631.png" style="width: 1.7rem; height: 20px;"></span>
+                     <span class="header-bar-icon-box" title="maxamize"><img src="https://r3.app.yellow.ai/api/blob-proxy/render/r3-ym-uploads/eDE2MDc3MTU4NDQxNjIvYWI4OGIxNmItNGQ1ZS00ZGFhLWI1NmItMzhlYWJhMmIyN2I5LnBuZw==" style="width: 1.7rem; height: 20px;"></span>
                      </div>
                      <div id="e9" class="icons-box" padding:="" 0="" 1rem;=""> 
                          <span class="header-bar-icon-box" title="Close" style="padding: 0 1rem;color: white;font-weight: 900;font-size: 20px;width: 100%;cursor: pointer;">x</span>
